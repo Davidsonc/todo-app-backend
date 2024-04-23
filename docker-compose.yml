@@ -3,6 +3,7 @@ services:
   pgadmin:
     image: dpage/pgadmin4
     restart: always
+    container_name: container-pgadmin
     ports:
       - 8000:80
     volumes:
@@ -16,6 +17,7 @@ services:
   postgres:
     image: postgres:14
     restart: always
+    container_name: container-postgres
     volumes:
       - postgres-data:/var/lib/postgresql/data
     ports:
