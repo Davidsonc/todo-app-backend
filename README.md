@@ -18,5 +18,5 @@ Execute os comandos de `build` e `run` ajustando as variáveis de ambiente de ac
 
 ```bash
 docker build -t todo-app-backend .
-docker run -it --rm -p 5000:5000 -e PORT=5000 -e DATABASE_URL="postgresql://postgres:secret@192.168.1.115:5432/develop?schema=public" todo-app-backend
+docker run -it --rm -p 5000:5000 -e PORT=5000 -e DATABASE_URL="postgresql://postgres:devPGSQL@192.168.1.115:5432/develop?schema=public" todo-app-backend
 ```
